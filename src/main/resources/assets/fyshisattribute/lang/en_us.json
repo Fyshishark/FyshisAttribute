@@ -1,0 +1,13 @@
+{
+  "fyshisattribute.attribute.respiratory": "Respiratory",
+  "fyshisattribute.attribute.regeneration_speed": "Regeneration Speed",
+  "fyshisattribute.attribute.energy": "Energy",
+  "fyshisattribute.attribute.lifesteal": "Lifesteal",
+  "fyshisattribute.attribute.hungersteal": "Hungersteal",
+  "fyshisattribute.attribute.postive_effect_in_duration": "Incoming Positive Effect Duration",
+  "fyshisattribute.attribute.negative_effect_in_duration": "Incoming Negative Effect Duration",
+  "fyshisattribute.attribute.postive_effect_out_duration": "Passing Positive Effect Duration",
+  "fyshisattribute.attribute.negative_effect_out_duration": "Passing Negative Effect Duration",
+  "fyshisattribute.attribute.jump": "Jump",
+  "fyshisattribute.attribute.jump_height": "Jump Height"
+}
