@@ -169,6 +169,9 @@ public abstract class LivingEntityMixin extends Entity implements LivingEntityFy
             at = @At("STORE")
     )
     private boolean modifyFlag(boolean flag) {
+        if(getSelf().getAttribute(AttributeRegistry.JUMP.get()) == null) {
+            return flag;
+        }
         return flag && amountOfJumps <= 0;
     }
     
@@ -188,12 +191,14 @@ public abstract class LivingEntityMixin extends Entity implements LivingEntityFy
             cancellable = true
     )
     private void modifiedGroundJump(CallbackInfo ci) {
-        if(amountOfJumps <= 0) {
-            ci.cancel();
-            return;
+        if(getSelf().getAttribute(AttributeRegistry.JUMP.get()) != null) {
+            if(amountOfJumps <= 0) {
+                ci.cancel();
+                return;
+            }
+            
+            --amountOfJumps;
         }
-        
-        --amountOfJumps;
     }
     
     @Inject (
