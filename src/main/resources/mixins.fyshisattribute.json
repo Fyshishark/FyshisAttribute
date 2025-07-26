@@ -4,10 +4,15 @@
   "compatibilityLevel": "JAVA_17",
   "package": "com.fyshishark.fyshisattribute.mixin",
   "refmap": "mixins.fyshisattribute.refmap.json",
+  "plugin": "com.fyshishark.fyshisattribute.FyshisMixinPlugin",
   "mixins": [
     "FoodMixin",
+    "EntityMixin",
     "LivingEntityMixin",
-    "PlayerMixin"
+    "PlayerMixin",
+    "AbstractClientPlayerMixin",
+    "WitchMixin",
+    "compat.parcool.CatleapMixin"
   ],
   "injectors": {
     "defaultRequire": 1

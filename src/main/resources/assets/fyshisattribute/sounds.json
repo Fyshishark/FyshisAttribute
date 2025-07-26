@@ -1,0 +1,44 @@
+{
+  "multijump": {
+    "subtitle": "sounds.fyshisattribute.multijump",
+    "sounds": [
+      "fyshisattribute:jump/multijump1",
+      "fyshisattribute:jump/multijump2",
+      "fyshisattribute:jump/multijump3",
+      "fyshisattribute:jump/multijump4"
+    ]
+  },
+  "aircrouch_start": {
+    "subtitle": "sounds.fyshisattribute.aircrouch_start",
+    "sounds": [
+      "fyshisattribute:aircrouch/aircrouch-start"
+    ]
+  },
+  "aircrouch_loop": {
+    "subtitle": "sounds.fyshisattribute.aircrouch_loop",
+    "sounds": [
+      "fyshisattribute:aircrouch/loop/tick1",
+      "fyshisattribute:aircrouch/loop/tick2",
+      "fyshisattribute:aircrouch/loop/tick3",
+      "fyshisattribute:aircrouch/loop/tick4"
+    ]
+  },
+  "aircrouch_stop": {
+    "subtitle": "sounds.fyshisattribute.aircrouch_stop",
+    "sounds": [
+      "fyshisattribute:aircrouch/aircrouch-stop"
+    ]
+  },
+  "aircrouch_cancel": {
+    "subtitle": "sounds.fyshisattribute.aircrouch_cancel",
+    "sounds": [
+      "fyshisattribute:aircrouch/aircrouch-cancel"
+    ]
+  },
+  "aircrouch_interrupt": {
+    "subtitle": "sounds.fyshisattribute.aircrouch_interrupt",
+    "sounds": [
+      "fyshisattribute:aircrouch/aircrouch-interrupt"
+    ]
+  }
+}

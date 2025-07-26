@@ -15,4 +15,10 @@ public class CompatibilityMod {
             mod.init(forgeBus);
         }
     }
+    
+    public static boolean isInstalled(String s) {
+        for(ICompatibilityMod mod : MODS)
+            if(mod.isInstalled()) return true;
+        return false;
+    }
 }

@@ -25,7 +25,7 @@ public abstract class FoodMixin {
             method = "tick",
             constant = @Constant(intValue = 10)
     )
-    private int modifyFullHunger(int x, Player pPlayer) {
+    private int modifyFullHunger(int x) {
         return (int)Math.round(x / livingEntity.getAttributeValue(AttributeRegistry.REGENERATION_SPEED.get()));
     }
     
@@ -34,8 +34,10 @@ public abstract class FoodMixin {
             constant =
             @Constant(
                     intValue = 80,
-                    ordinal = 0))
-    private int modifyLessHunger(int x, Player pPlayer) {
+                    ordinal = 0
+            )
+    )
+    private int modifyLessHunger(int x) {
         return (int)Math.round(x / livingEntity.getAttributeValue(AttributeRegistry.REGENERATION_SPEED.get()));
     }
     
@@ -56,7 +58,7 @@ public abstract class FoodMixin {
                     floatValue = 6.0f,
                     ordinal = 2)
     )
-    private float modifyLessArg(float f, Player pPlayer) {
+    private float modifyLessArg(float f) {
         return f / (float) livingEntity.getAttributeValue(AttributeRegistry.REGENERATION_SPEED.get());
     }
     
@@ -66,6 +68,7 @@ public abstract class FoodMixin {
             argsOnly = true
     )
     private float modifyAddExhaustion(float f) {
+        if(livingEntity == null) return f;
         return f / (float) livingEntity.getAttributeValue(AttributeRegistry.ENERGY.get());
     }
 }
